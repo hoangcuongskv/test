@@ -1,0 +1,57 @@
+LamGcafe@MAY01 MINGW64 /e/test (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   555.txt
+
+
+LamGcafe@MAY01 MINGW64 /e/test (master)
+$ git add .
+
+LamGcafe@MAY01 MINGW64 /e/test (master)
+$ git commit -m "commit 555.txt"
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'LamGcafe@MAY01.(none)')
+
+LamGcafe@MAY01 MINGW64 /e/test (master)
+$  git config --global user.email "vaicongai@gmail.com"
+
+LamGcafe@MAY01 MINGW64 /e/test (master)
+$
+
+LamGcafe@MAY01 MINGW64 /e/test (master)
+$ git config --global user.name "hoangcuongskv"
+
+LamGcafe@MAY01 MINGW64 /e/test (master)
+$ git commit -m "commit 555"
+[master 6f8d412] commit 555
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 555.txt
+
+LamGcafe@MAY01 MINGW64 /e/test (master)
+$ git push
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 273 bytes | 273.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/hoangcuongskv/test.git
+   610cbe3..6f8d412  master -> master
+
+LamGcafe@MAY01 MINGW64 /e/test (master)
+$
